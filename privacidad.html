@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad de kunde</title>
+<!--
+  Apple, Google Play y la pantalla de consentimiento de Google piden esta
+  página como URL PÚBLICA. Si la app empieza a enviar datos a un servicio
+  nuevo, hay que añadirlo aquí (y cambiar la fecha) antes de publicar esa
+  versión: la política tiene que describir la app que está en la tienda.
+-->
+<style>
+  :root { --fondo: #fbfaf8; --texto: #1d1b19; --suave: #5f5a55; --linea: #e4e0db; --acento: #c4521b; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fondo: #161514; --texto: #eeebe7; --suave: #a8a29c; --linea: #33302d; --acento: #f08a4b; }
+  }
+  body { margin: 0; background: var(--fondo); color: var(--texto);
+         font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 44rem; margin: 0 auto; padding: 3rem 1.25rem 4rem; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 .25rem; }
+  h2 { font-size: 1.2rem; margin: 2.25rem 0 .5rem; }
+  .fecha { color: var(--suave); margin: 0 0 2rem; }
+  .resumen { border-left: 3px solid var(--acento); padding: .25rem 0 .25rem 1rem; }
+  .tabla { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+  th, td { text-align: left; vertical-align: top; padding: .6rem .5rem; border-bottom: 1px solid var(--linea); }
+  th { color: var(--suave); font-weight: 600; }
+  a { color: var(--acento); }
+  code { font-size: .9em; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Política de privacidad de kunde</h1>
+  <p class="fecha">Última actualización: 11 de septiembre de 2026</p>
+
+  <div class="resumen">
+    <p><strong>En resumen:</strong></p>
+    <ul>
+      <li>Tus apuntes se guardan en tu dispositivo. kunde no tiene servidores propios ni cuentas de usuario.</li>
+      <li>No hay publicidad ni analítica, y no vendemos datos.</li>
+      <li>Solo sale información de tu dispositivo cuando usas una función que la necesita (la IA, las fuentes académicas, las fotos o Google). Esa información va directamente al servicio correspondiente.</li>
+    </ul>
+  </div>
+
+  <h2>Quién es el responsable</h2>
+  <p>kunde es una app de com.apab. Para cualquier pregunta sobre esta política, escribe a <a href="mailto:abbiappo8@gmail.com">abbiappo8@gmail.com</a>.</p>
+
+  <h2>Qué se queda en tu dispositivo</h2>
+  <ul>
+    <li>La tinta de tus páginas, sus transcripciones, lo que la IA recuerda de tus apuntes, tus dibujos recortados y tus ajustes.</li>
+    <li>Tus claves (OpenRouter y Unsplash) y tu sesión de Google. Se guardan cifradas en el almacenamiento seguro del sistema: el Llavero en iPhone, iPad y Mac, el Keystore en Android y DPAPI en Windows.</li>
+  </ul>
+  <p>Nosotros no tenemos copia de nada de esto.</p>
+
+  <h2>Bluetooth</h2>
+  <p>kunde usa Bluetooth para conectarse a tu lápiz y recibir tus trazos. Solo recibe datos; nunca envía nada al lápiz. En Android 11 o anterior, el sistema exige el permiso de ubicación para buscar dispositivos Bluetooth. kunde no usa ni guarda tu ubicación.</p>
+
+  <h2>Cuándo salen datos de tu dispositivo</h2>
+  <div class="tabla">
+    <table>
+      <tr><th>Servicio</th><th>Cuándo</th><th>Qué se envía</th></tr>
+      <tr>
+        <td><a href="https://openrouter.ai/privacy">OpenRouter</a> (IA)</td>
+        <td>Al sincronizar páginas, usar el chat, pedir resúmenes o documentos y, si lo activas, generar imágenes con IA.</td>
+        <td>Las páginas que cambiaron, tus mensajes y el contenido que pides procesar. Se usa <strong>tu propia clave</strong> de OpenRouter, y kunde pide que solo atiendan proveedores que no guardan lo que reciben (<code>data_collection: deny</code>).</td>
+      </tr>
+      <tr>
+        <td><a href="https://openalex.org">OpenAlex</a></td>
+        <td>Cuando el chat busca fuentes académicas.</td>
+        <td>Los términos de búsqueda, sin datos personales.</td>
+      </tr>
+      <tr>
+        <td><a href="https://unsplash.com/privacy">Unsplash</a> (opcional)</td>
+        <td>Si pones tu propia Access Key y el asistente ilustra una presentación.</td>
+        <td>Los términos de búsqueda de las fotos.</td>
+      </tr>
+      <tr>
+        <td><a href="https://policies.google.com/privacy">Google</a> (opcional)</td>
+        <td>Si conectas tu cuenta y el asistente crea o actualiza documentos, hojas de cálculo, presentaciones o eventos.</td>
+        <td>El contenido de esos archivos y eventos. kunde solo pide acceso a los archivos que ella misma crea (<code>drive.file</code>) y a los eventos de tu calendario (<code>calendar.events</code>).</td>
+      </tr>
+      <tr>
+        <td><a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub</a></td>
+        <td>Solo en las versiones que se descargan fuera de las tiendas (Windows y el instalador .dmg de Mac), al abrir la app.</td>
+        <td>Nada tuyo: kunde descarga un archivo con el número de la última versión. Como en cualquier visita web, GitHub ve tu dirección IP.</td>
+      </tr>
+    </table>
+  </div>
+  <p>Cada uno de estos servicios trata los datos según su propia política de privacidad, enlazada en la tabla.</p>
+
+  <h2>Datos de Google</h2>
+  <p>El uso que hace kunde de la información recibida de las API de Google cumple la <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de datos de usuario de los servicios de API de Google</a>, incluidos los requisitos de uso limitado. kunde usa esos datos únicamente para crear y actualizar el contenido que el asistente prepara para ti, y no los transfiere a nadie más. Puedes retirar el acceso cuando quieras en Ajustes → Desconectar, o en <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+
+  <h2>Lo que kunde no hace</h2>
+  <ul>
+    <li>No incluye analítica, publicidad ni rastreo entre apps o sitios web.</li>
+    <li>No vende ni comparte tus datos con fines publicitarios.</li>
+    <li>No te pide crear una cuenta.</li>
+  </ul>
+
+  <h2>Cómo controlar y borrar tus datos</h2>
+  <ul>
+    <li>Al desinstalar kunde se borran los datos guardados en tu dispositivo.</li>
+    <li>Puedes quitar tus claves y desconectar Google en cualquier momento desde Ajustes.</li>
+    <li>Lo que ya se envió a OpenRouter, OpenAlex, Unsplash o Google queda sujeto a la política de ese servicio.</li>
+  </ul>
+
+  <h2>Cambios en esta política</h2>
+  <p>Si cambia lo que hace kunde con tus datos, actualizaremos esta página y su fecha antes de publicar la versión de la app con ese cambio.</p>
+</main>
+</body>
+</html>
