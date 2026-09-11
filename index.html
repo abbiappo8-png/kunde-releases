@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>kunde — cuaderno inteligente</title>
+<!--
+  Página principal PÚBLICA de kunde (la raíz de abbiappo8-png/kunde-releases
+  en GitHub Pages). Google la exige para verificar la pantalla de
+  consentimiento: tiene que describir la app tal como es, estar en un dominio
+  verificado y enlazar a la política de privacidad (privacidad.html, al lado).
+
+  Si la app cambia lo que hace con la cuenta de Google, actualiza la sección
+  «Tu cuenta de Google» y la política a la vez: Google compara las dos con los
+  permisos que pide la app.
+-->
+<style>
+  :root { --fondo: #fbfaf8; --texto: #1d1b19; --suave: #5f5a55; --linea: #e4e0db; --acento: #c4521b; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fondo: #161514; --texto: #eeebe7; --suave: #a8a29c; --linea: #33302d; --acento: #f08a4b; }
+  }
+  body { margin: 0; background: var(--fondo); color: var(--texto);
+         font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 44rem; margin: 0 auto; padding: 3rem 1.25rem 4rem; }
+  h1 { font-size: 2.5rem; line-height: 1.1; margin: 0 0 .5rem; }
+  h2 { font-size: 1.2rem; margin: 2.25rem 0 .5rem; }
+  .lema { font-size: 1.15rem; color: var(--suave); margin: 0 0 2rem; }
+  a { color: var(--acento); }
+  code { font-size: .9em; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--linea); color: var(--suave); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>kunde</h1>
+  <p class="lema">Un cuaderno inteligente para tu lápiz digital. Escribes en papel y kunde lo guarda, lo lee y te ayuda a trabajar con tus apuntes.</p>
+
+  <h2>Qué hace</h2>
+  <ul>
+    <li>Recibe por Bluetooth lo que escribes con un lápiz inteligente compatible (por ejemplo, los lápices MasterBen) y lo organiza en cuadernos y páginas.</li>
+    <li>Transcribe tus páginas y te deja conversar con tus apuntes, pedir resúmenes y buscar fuentes académicas.</li>
+    <li>Prepara ejercicios, documentos y presentaciones a partir de lo que escribiste.</li>
+    <li>Si conectas tu cuenta de Google, guarda esos documentos en tu Google Drive y crea los eventos que le pidas en tu calendario.</li>
+  </ul>
+  <p>kunde funciona en iPhone, iPad, Mac, Android y Windows, en español y en chino simplificado.</p>
+
+  <h2>Qué necesitas</h2>
+  <ul>
+    <li>Un lápiz inteligente compatible.</li>
+    <li>Para las funciones de IA, tu propia clave de <a href="https://openrouter.ai">OpenRouter</a>. Sin ella, kunde funciona como cuaderno digital.</li>
+    <li>Opcional: una cuenta de Google, si quieres que el asistente guarde documentos o cree eventos.</li>
+  </ul>
+
+  <h2>Tu cuenta de Google</h2>
+  <p>Conectar Google es opcional. Si lo haces, kunde pide solo dos permisos:</p>
+  <ul>
+    <li><code>drive.file</code>: crear y editar <strong>únicamente los archivos que kunde crea</strong> en tu Drive. No ve el resto de tus archivos.</li>
+    <li><code>calendar.events</code>: crear y actualizar los eventos que le pides al asistente.</li>
+  </ul>
+  <p>kunde no tiene servidores propios: tu sesión se guarda cifrada en tu dispositivo y las llamadas van directamente a Google. Puedes desconectar tu cuenta en Ajustes o en <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Los detalles están en la <a href="privacidad.html">política de privacidad</a>.</p>
+
+  <h2>Contacto</h2>
+  <p>Escribe a <a href="mailto:abbiappo8@gmail.com">abbiappo8@gmail.com</a>.</p>
+
+  <footer>
+    © 2026 com.apab · <a href="privacidad.html">Política de privacidad</a>
+  </footer>
+</main>
+</body>
+</html>
